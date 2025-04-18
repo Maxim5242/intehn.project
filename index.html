@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intehn</title>
+</head>
+<body>
+    <!-- Главный блок -->
+    <div class="main_block">
+        <!-- Поисковая строка -->
+        <div class="search_block">
+            <form action="/">
+                <input type="text" name="s" class="search">
+            </form>
+            <img src="/static/search.png" class="box">
+        </div>
+
+        
+        <div class="cards_block">
+            <!-- Карточка -->
+            {% for i in range(names | length) %}
+            <a href="{{ urls[i] }}" target="_blank">
+                <div class="card">
+                        <div class="name">
+                            {{ names[i] }}
+                        </div>
+                        <div class="price">
+                            {{ prices[i] }}₽
+                        </div>
+
+
+
+                        <img class="image1" src="{{ imgs[i] }}">
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    
+</body>
+<script>
+    document.se
+</script>
+</html>
+
+
+
+
+
